@@ -1,0 +1,31 @@
+{
+  "name": "network-traffic-monitor",
+  "version": "1.0.0",
+  "description": "网络流量监控与可视化系统 - SOC Dashboard",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "nginx:test": "nginx -t -p /home/easton/project/Network_Traffic_Project/nginx-runtime -c conf/nginx.conf",
+    "nginx:start": "nginx -p /home/easton/project/Network_Traffic_Project/nginx-runtime -c conf/nginx.conf",
+    "nginx:reload": "nginx -s reload -p /home/easton/project/Network_Traffic_Project/nginx-runtime -c conf/nginx.conf",
+    "nginx:stop": "nginx -s stop -p /home/easton/project/Network_Traffic_Project/nginx-runtime -c conf/nginx.conf"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.7",
+    "lucide-react": "^0.441.0",
+    "clsx": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.11",
+    "vite": "^5.4.3"
+  }
+}
